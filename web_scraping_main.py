@@ -1,5 +1,5 @@
 import requests
-import functions
+import web_scraping_functions
 from bs4 import BeautifulSoup
 
 # Step 1: Find the URL that you want to scrape.
@@ -17,7 +17,7 @@ soup = BeautifulSoup(page.content, 'html.parser')
 # This step is performed in a functions.py modul.
 
 # Step 5: Run the code and extract the data.
-data = functions.convert_soup_to_csv(soup)  # Step 5.1
+data = web_scraping_functions.convert_soup_to_csv(soup)  # Step 5.1
 print(data)  # Step 5.2
 
 # Step 6: Store the data in the required format.

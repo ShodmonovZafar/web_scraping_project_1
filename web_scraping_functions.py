@@ -7,6 +7,8 @@ def convert_soup_to_csv(soup):
     Return:
         csv_data: str
     """
+    div_tag_1 = soup.div
+    print(type(div_tag_1.contents[4]))
     pass
     
 def save_data_to_csv(data, path_csv_file):
